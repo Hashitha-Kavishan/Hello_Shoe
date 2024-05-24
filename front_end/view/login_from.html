@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/8.0.1_normalize.css">
+</head>
+<style>
+    body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    body>header{
+        width: 100vw;
+        height: 7vh;
+        background: #2960EF;
+        position: relative;
+    }
+    body>header>h4{
+        font-size: 15px;
+        position: absolute;
+        top: 15px;
+        bottom: 0;
+        left: 60px;
+        margin: auto;
+    }
+    body>main{
+        width: 100vw;
+        height: 93vh;
+        position: relative;
+    }
+    body>main>section:first-child>div{
+        display: inline-block;
+        position: relative;
+    }
+    body>main>section:first-child{
+        width: 500px;
+        height: 370px;
+        border: 2px solid black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+    }
+    body>main>section:first-child>h3{
+        margin-left: 130px;
+        font-size: 25px;
+    }
+    body>main>section:first-child>div:nth-child(2)>input{
+        width: 450px;
+        height: 40px;
+        border: black solid 2px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #txtUser{
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    #txtPassword{
+        position: relative;
+        top: 35px;
+        left: 20px;
+    }
+    body>main>section:first-child>div:nth-child(3){
+        position: relative;
+        top: 80px;
+        left: 20px;
+    }
+    body>main>section:first-child>div:nth-child(3)>button{
+        width: 200px;
+        height: 40px;
+        border: black solid 2px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #btnSignIn{
+        margin-right: 50px;
+    }
+    body>main>section:last-child>div{
+        display: inline-block;
+        position: relative;
+    }
+    body>main>section:last-child{
+        width: 500px;
+        height: 370px;
+        border: 2px solid black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+        display: none;
+    }
+    body>main>section:last-child>h3{
+        margin-left: 130px;
+        font-size: 25px;
+    }
+    body>main>section:last-child>div:nth-child(2)>input{
+        width: 450px;
+        height: 40px;
+        border: black solid 2px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #txtSignUpEmail{
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    #cmdAccessRole{
+        width: 450px;
+        height: 40px;
+        border: black solid 2px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #txtPasswordSignUpEmail{
+        position: relative;
+        top: 35px;
+        left: 20px;
+    }
+    body>main>section:last-child>div:nth-child(2){
+        position: relative;
+        top: 80px;
+        left: 20px;
+    }
+    body>main>section:last-child>div:nth-child(3){
+        position: relative;
+        top: 135px;
+        left: 20px;
+    }
+    body>main>section:last-child>div:nth-child(3)>button{
+        width: 200px;
+        height: 40px;
+        border: black solid 2px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #btnSignUpToApp{
+        margin-right: 50px;
+    }
+</style>
+<body>
+    <header>
+        <h4>Hello, Shoes (Pvt) Ltd</h4>
+    </header>
+    <main>
+        <section id="log-in-page">
+            <h3>Hello, Shoes (Pvt) Ltd</h3>
+            <div>
+                <input type="text" placeholder="User" id="txtUser">
+                <input type="text" placeholder="Password" id="txtPassword" >
+            </div>
+
+            <div>
+                <button type="button" id="btnSignIn">Sign In</button>
+                <button type="button" id="btnSignUp">Sign Up</button>
+            </div>
+        </section>
+        <section id="sign-up-page">
+            <h3>Hello, Shoes (Pvt) Ltd</h3>
+            <div>
+                <div >
+                    <select class="form-select form-select-sm" aria-label="Small select example" id="cmdAccessRole">
+                        <option>Admin</option>
+                        <option>User</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="Email" id="txtSignUpEmail">
+                <input type="text" placeholder="Password" id="txtPasswordSignUpEmail" >
+            </div>
+
+            <div>
+                <button type="button" id="btnSignUpToApp">Sign Up</button>
+                <button type="button" id="btnBackLogIn">Back</button>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/Bootstrap/js/bootstrap.js"></script>
+    <script src="../controller/SignInController.js"></script>
+    <script src="../controller/SignUpController.js"></script>
+</body>
+</html>
