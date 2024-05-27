@@ -4,8 +4,6 @@ $("#employee").css('display','none');
 $("#inventory").css('display','none');*/
 
 
-setPurchaseOrderID()
-
 let paymentMethod="cash";
 
 /*function clearAll(){
@@ -20,6 +18,20 @@ function setSaleView(viewOb){
 $("#navSale").click(function (){
     setSaleView($("#sale"))
 });
+NextOrderID();
+function NextOrderID(){
+    $.ajax({
+        url: "http://localhost:8080/app/api/v1/sales/orderID",
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer " + localStorage.getItem("token")
+        },
+        success: function (resp) {
+            $("#lblOrderId").text(resp)
+            console.log(resp);
+        },
+    });
+}
 
 getAllInventoriesForSale();
 function getAllInventoriesForSale(){
@@ -354,28 +366,14 @@ $("#btnPurchase").click(function (){
     purchaseOrder();
 })
 
-function setPurchaseOrderID(){
-    $.ajax({
-        url: "http://localhost:8080/app/api/v1/sales/orderID",
-        method: "GET",
-        dataType: "json",
-        headers: {
-            "Authorization": "Bearer " + localStorage.getItem("token")
-        },
-        success: function (resp) {
-            $("#lblOrderId").text(resp)
-        },
-    });
-}
-
 function purchaseOrder(){
     let customerCode = $("#txtCustomerCodeForPurchase").val();
     let employeeCode = $("#txtEmployeeCodeForPurchase").val();
     let orderId = $("#lblOrderId").text();
     let totalOfAllItems = $("#txtSubtotal").text();
     let orderDate = $("#lblOrderDate").text();
-    let customerName;
-    let employeeName;
+    let customerName=null;
+    let employeeName=null;
     let addedPoints=0;
 
     let itemDetails=[];
@@ -501,6 +499,44 @@ function getAllSales(){
                     <td>${sale.employeeCode}</td>
                 </tr>`
                 $("#tblPurchaseDetails").append(row);
+            }
+        },
+    });
+}
+
+$("#btnToRefundForm").click(function (){
+    $("#refundPurchase").css({
+        'display':'block'
+    });
+});
+
+$("#btnToSaleFromRefund").click(function (){
+    $("#refundPurchase").css({
+        'display':'none'
+    });
+});
+getAllRefunds();
+function getAllRefunds(){
+    $("#tblRefundDetails").empty();
+    $.ajax({
+        url: "http://localhost:8080/app/api/v1/sales/refund",
+        method: "GET",
+        dataType: "json",
+        headers: {
+            "Authorization": "Bearer " + localStorage.getItem("token")
+        },
+        success: function (resp) {
+            for (const sale of resp) {
+                let row = `<tr>
+                    <td>${sale.orderNo}</td>
+                    <td>${sale.orderNo}</td>
+                    <td>${sale.itemCode}</td>
+                    <td>${sale.itemDesc}</td>
+                    <td>${sale.size}</td>
+                    <td>${sale.quantity}</td>
+                    <td>${sale.unitPrice}</td>              
+                </tr>`
+                $("#tblRefundDetails").append(row);
             }
         },
     });

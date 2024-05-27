@@ -42,12 +42,8 @@ $("#btnSignIn").click(function () {
             error: function (xhr, textStatus, error) {
                 console.log("logIn error: ", error);
                 console.log("logIn error: ", xhr);
-                if (xhr.status===401){
-                    swal("Error", "Incorrect Password!", "error");
-                }
-                if (xhr.status===404){
-                    swal("Error", "User email is not found", "error");
-                }
+                alert("Error :Incorrect Password! error");
+
             }
         });
     }
@@ -60,7 +56,7 @@ function switchToAnotherPageFromLogin(resp) {
     $("#log-in-page").css('display','none');*/
     if(resp.role==="ADMIN"){
         $("#sale,#header").css('display','block');
-        $("#navDashboard").css('display','none');
+        // $("#navDashboard").css('display','none');
         $("#log-in-page").css('display','none');
     }
 

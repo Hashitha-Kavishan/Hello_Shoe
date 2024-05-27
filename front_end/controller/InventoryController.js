@@ -38,7 +38,7 @@ $("#btnInventorySave").click(function (){
 
     let category=$("#cmdItemCategory").val();
     let supplierCode=$("#txtSupplierCodeForItem").val();
-    let supplierName=$("#txtSupplierName").val();
+    let supplierName=$("#txtSupplierNameForItem").val();
     let unitPriceSale=$("#txtUnitPriceSale").val();
     let unitPriceBuy=$("#txtUnitPriceBuy").val();
     let expectedProfit=$("#txtItemExpectedProfit").val();
@@ -78,6 +78,9 @@ $("#btnInventorySave").click(function (){
         data: inventoryData,
         processData: false,
         contentType: false,
+        headers: {
+            "Authorization": "Bearer " + localStorage.getItem("token")
+        },
 
         success: function (resp, textStatus, jqxhr){
             console.log("Success",resp);
@@ -140,6 +143,9 @@ $("#btnInventoryUpdate").click(function (){
         data: inventoryData,
         processData: false,
         contentType: false,
+        headers: {
+            "Authorization": "Bearer " + localStorage.getItem("token")
+        },
 
         success: function (resp, textStatus, jqxhr){
             console.log("Success",resp);
@@ -160,6 +166,9 @@ $("#btnInventoryDelete").click(function (){
     $.ajax({
         url: "http://localhost:8080/app/api/v1/inventories/" + itemCode,
         method: "DELETE",
+        headers: {
+            "Authorization": "Bearer " + localStorage.getItem("token")
+        },
         success: function (resp, textStatus, jqxhr) {
             if (jqxhr.status == 201) {
                 alert("Delete inventory successfully");
