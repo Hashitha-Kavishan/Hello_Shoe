@@ -1,14 +1,6 @@
-/*$("#customer").css('display','none');
-$("#supplier").css('display','none');
-$("#employee").css('display','none');
-$("#inventory").css('display','none');
-$("#sale").css('display','none');
-$("#admin").css('display','none');*/
+
 getAllEmployee()
 
-/*function clearAll(){
-    $("#customer,#supplier,#employee,#inventory,#sale,#admin").css('display','none');
-}*/
 
 function setEmployeeView(viewOb){
     clearAll();
@@ -27,7 +19,7 @@ inputFile.onchange = function (){
 }
 
 $("#btnEmployeeSave").click(function (){
-   saveEmployee();
+    saveEmployee();
 });
 
 $("#btnEmployeeUpdate").click(function (){
@@ -265,7 +257,7 @@ function bindEmployeeTrEvents() {
         $("#txtEmployeeCaseOfEmergency").val(caseOfEmergency)
         $("#txtEmployeeEmergencyContact").val(emergencyContact)
 
-       uploadProfilePicture(code);
+        uploadProfilePicture(code);
 
     });
 }

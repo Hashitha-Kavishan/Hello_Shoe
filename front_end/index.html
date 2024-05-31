@@ -1,1716 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Hello Shoes Pvt. Ltd</title>
-    <meta name="keywords" content="Shoes,Hello, Shoes,Women Shoes,Men Shoes">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="assets/css/8.0.1_normalize.css">
+    <title>Hello Shoe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+
+
     <style>
-        body>header{
-            position: relative;
-        }
-        body>header>nav{
-            width: 98.5vw;
-            height: 8vh;
-            background: #E5F4FD;
-            align-items: baseline;
+        .count{
+            margin-top: 50px;
             display: flex;
-            overflow: hidden;
-            position: fixed;
-            z-index: 1;
-        }
-        body>header>nav>label{
-            margin-top: 1%;
-            margin-right: 0;
-        }
-        body>header>nav>div>ul{
-            display: flex;
+            width: 70vw;
+            justify-content: space-around;
             align-items: center;
-            margin: 0;
-            /*position: absolute;*/
-            /*top: 0%;*/
-            /*bottom: 0;*/
-            /*right: 0%;*/
-            /*margin: auto;*/
-        }
-        body>header>nav>div{
-            display: flex;
         }
 
-        body>header>nav>div>img{
-            align-self: center;
-        }
-
-        body>header>nav>div>ul>li{
-            display: inline-block;
-            padding-left: 40px;
-            list-style: none;
-        }
-        /*body>header>nav>div>img{*/
-        /*    position: absolute;*/
-        /*    top: 10px;*/
-        /*    bottom: 0;*/
-        /*    right: 200px;*/
-        /*    margin: auto;*/
-        /*}*/
-        body>main>section:nth-child(1)>div:first-child{
-            width: 98vw;
-            height: 55vh;
-            position: relative;
-            top: 15vh;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:first-child{
-            width: 40vw;
-            height: 50vh;
-            position: absolute;
-            top: 0%;
-            left: 7%;
-            margin: auto;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:first-child>div{
-            position: relative;
-        }
-        /*  body>main>section:nth-child(1)>div:first-child>div:first-child>div>label{
-              margin-top: 0;
-              margin-bottom: 15px;
-              display: inline-block;
-          }*/
-        /* body>main>section:nth-child(1)>div:first-child>div:first-child>div>input{
-             !*margin-top: 0;*!
-             !*margin-bottom: 0;*!
-             width: 350px;
-             height: 20px;
-             border: black solid 1px;
-             position: absolute;
-             right: 0;
-             top: 0;
-             margin: auto;
-
-         }*/
-        body>main>section:nth-child(1)>div:first-child>div:first-child>div:nth-child(3)>div{
-            display: inline-block;
-            margin-left: 195px;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:first-child>div:nth-child(3)>div>div{
-            display: inline-block;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:first-child>div:nth-child(5)>div{
-            display: inline-block;
-            margin-left: 210px;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:first-child>div:nth-child(5)>div>div{
-            display: inline-block;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:last-child{
-            width: 40vw;
-            height: 50vh;
-            position: absolute;
-            top: 0%;
-            right: 7%;
-            margin: auto;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:last-child>div{
-            position: relative;
-        }
-        /*body>main>section:nth-child(1)>div:first-child>div:last-child>div>h4{
-            margin-top: 0;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:last-child>div>input{
-            !*margin-top: 0;*!
-            !*margin-bottom: 0;*!
-            width: 350px;
-            height: 20px;
-            border: black solid 1px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin: auto;
-
-        }*/
-        body>main>section:nth-child(1)>div:first-child>div:last-child>div:nth-child(3)>div{
-            display: inline-block;
-            margin-left: 195px;
-        }
-        body>main>section:nth-child(1)>div:first-child>div:last-child>div:nth-child(3)>div>div{
-            display: inline-block;
-        }
-        body>main>section:nth-child(1)>div:last-child{
-            width: 95vw;
-            height: 92vh;
-            position: absolute;
-            left: 3%;
-            top: 70%;
-            margin: 0;
-            padding: 0;
-            overflow-y: scroll; /* enables vertical scrolling */
-
-            box-sizing: border-box;
-            font-family: sans-serif;
-
-            background-color: #fff5;
-            backdrop-filter: blur(7px);
-            box-shadow: 0 .4rem .8rem #0005;
-
-        }
-        /*body>main>section:nth-child(1)>div:last-child>div:last-child>table,th,td{
-            border-collapse: collapse;
-            padding: 10px;
-        }
-        body>main>section:nth-child(1)>div:last-child>div:last-child>table>thead{
-            position: sticky;
-            top: 0;
-            left: 0;
-            background-color: #d5d1defe;
-        }
-        body>main>section:nth-child(1)>div:last-child>div:last-child>table>tbody>tr:hover{
-            background-color: white;
-        }*/
-        /*body>main>section:nth-child(1)>div:last-child>div{
-            !*width: 100%; !* or set a specific width *!*!
-            height: 300px; !* set a specific height to enable vertical scrolling *!
-            !*overflow-x: auto; !* enables horizontal scrolling *!*!
-            overflow-y: auto; !* enables vertical scrolling *!
-        }*/
-        /* body>main>section:nth-child(1)>div:last-child>div:first-child{
-             width: 100%;
-             height: 10%;
-             background-color:#fff3ff ;
-             padding: 20px;
-         }
-         body>main>section:nth-child(1)>div:last-child>div:last-child::-webkit-scrollbar{
-             width: 0.5rem;
-             height: 0.5rem;
-         }
-         body>main>section:nth-child(1)>div:last-child>div:last-child::-webkit-scrollbar-thumb{
-             border-radius: 5rem;
-             background-color: #000400;
-             visibility: hidden;
-         }
-         body>main>section:nth-child(1)>div:last-child>div:last-child:hover::-webkit-scrollbar-thumb{
-             visibility: visible;
-         }*/
-        /* body>main>section:nth-child(2){
-             width: 100vw;
-             height: 90vh;
-             position: relative;
-         }*/
-        body>main>section:nth-child(2)>div:first-child{
-            width: 98vw;
-            height: 55vh;
-            position: relative;
-            top: 15vh;
-        }
-        body>main>section:nth-child(2)>div:first-child>div:first-child{
-            width: 40vw;
-            height: 50vh;
-            position: absolute;
-            top: 0%;
-            left: 7%;
-            margin: auto;
-        }
-        /*  body>main>section:nth-child(2)>div:first-child>div:first-child>div{
-              position: relative;
-          }*/
-        /*body>main>section:nth-child(2)>div:first-child>div:first-child>div>h4{
-            margin-top: 0;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-        body>main>section:nth-child(2)>div:first-child>div:first-child>div>input{
-            !*margin-top: 0;*!
-            !*margin-bottom: 0;*!
-            width: 450px;
-            height: 20px;
-            border: black solid 1px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin: auto;
-        }*/
-        body>main>section:nth-child(2)>div:first-child>div:last-child{
-            width: 40vw;
-            height: 50vh;
-            position: absolute;
-            top: 0%;
-            right: 7%;
-            margin: auto;
-        }
-        /* body>main>section:nth-child(2)>div:first-child>div:last-child>div{
-             position: relative;
-         }*/
-        /* body>main>section:nth-child(2)>div:first-child>div:last-child>div>h4{
-             margin-top: 0;
-             margin-bottom: 15px;
-             display: inline-block;
-         }
-         body>main>section:nth-child(2)>div:first-child>div:last-child>div>input{
-             width: 450px;
-             height: 20px;
-             border: black solid 1px;
-             position: absolute;
-             right: 0;
-             top: 0;
-             margin: auto;
-         }*/
-        body>main>section:nth-child(2)>div:last-child{
-            width: 95vw;
-            height: 92vh;
-            position: absolute;
-            left: 2%;
-            top: 60%;
-
-            overflow-y: scroll; /* enables vertical scrolling */
-
-            box-sizing: border-box;
-            font-family: sans-serif;
-
-            background-color: #fff5;
-            backdrop-filter: blur(7px);
-            box-shadow: 0 .4rem .8rem #0005;
-        }
-        body>main>section:nth-child(3)>div:first-child{
-            width: 98vw;
-            height: 70vh;
-            position: relative;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child{
-            width: 40vw;
-            height: 65vh;
-            position: absolute;
-            top: 23%;
-            left: 7%;
-            margin: auto;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:first-child{
-            width: 100%;
-            height: 120px;
-            border: black solid 2px;
-            border-radius: 15px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:first-child>img{
-            width: 80px;
-            height: 80px;
-            border-radius:50%;
-            position: absolute;
-            top: 5px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:first-child>label{
-            font-size: 20px;
-            color: #0a58ca;
-            position: relative;
-            left: 260px;
-            top: 90px;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:first-child>input{
-            display: none;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child{
-            position: relative;
-            top: 130px;
-        }
-        /*body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child>div{
-            position: relative;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child>div>h4{
-            margin-top: 0;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child>div>input{
-            width: 350px;
-            height: 20px;
-            border: black solid 1px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin: auto;
-
-        }*/
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child>div:nth-child(3)>div{
-            display: inline-block;
-            margin-left: 195px;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:first-child>div:last-child>div:nth-child(3)>div>div{
-            display: inline-block;
-        }
-        body>main>section:nth-child(3)>div:first-child>div:last-child{
-            width: 40vw;
-            height: 65vh;
-            position: absolute;
-            top: 23%;
-            right: 7%;
-            margin: auto;
-        }
-        /* body>main>section:nth-child(3)>div:first-child>div:last-child>div{
-             position: relative;
-         }
-         body>main>section:nth-child(3)>div:first-child>div:last-child>div>h4{
-             margin-top: 0;
-             margin-bottom: 10px;
-             display: inline-block;
-         }
-         body>main>section:nth-child(3)>div:first-child>div:last-child>div>input{
-             width: 350px;
-             height: 20px;
-             border: black solid 1px;
-             position: absolute;
-             right: 0;
-             top: 0;
-             margin: auto;
-
-         }*/
-        body>main>section:nth-child(3)>div:last-child{
-            width: 95vw;
-            height: 92vh;
-            overflow: hidden;
-            overflow-y: scroll;
-            overflow-x: scroll;
-            position: absolute;
-            left: 2%;
-            top:90%;
-            margin: auto;
-        }
-        body>main>section:nth-child(4)>div:first-child{
-            position: relative;
-            width: 98vw;
-            height: 40vh;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child{
-            width: 40vw;
-            height: 70vh;
-            position: absolute;
-            top: 40%;
-            left: 7%;
-            margin: auto;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:first-child{
-            width: 100%;
-            height: 120px;
-            border: black solid 2px;
-            border-radius: 15px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            margin: auto;
-        }
-
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:first-child>img{
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            top: 5px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:first-child>label{
-            font-size: 15px;
-            color: #0a58ca;
-            position: relative;
-            left: 260px;
-            top: 90px;
-            cursor: auto;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:first-child>input{
-            display: none;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:last-child{
-            position: relative;
-            top: 130px;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:first-child>div:last-child>div{
-            position: relative;
-        }
-
-        body>main>section:nth-child(4)>div:first-child>div:last-child{
-            width: 40vw;
-            height: 70vh;
-            position: absolute;
-            top: 40%;
-            right: 7%;
-            margin: auto;
-        }
-        body>main>section:nth-child(4)>div:first-child>div:last-child>div{
-            position: relative;
-        }
-
-        body>main>section:nth-child(4)>div:first-child>div:last-child>div{
-            position: relative;
-        }
-
-        body>main>section:nth-child(4)>div:last-child{
-            width: 95vw;
-            height: 92vh;
-            position: absolute;
-            left: 2%;
-            top: 90%;
-
-            overflow-y: scroll; /* enables vertical scrolling */
-
-            box-sizing: border-box;
-            font-family: sans-serif;
-
-            background-color: #fff5;
-            backdrop-filter: blur(7px);
-            box-shadow: 0 .4rem .8rem #0005;
-
-        }
-        body>main>section:nth-child(5)>{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
-        body>main>section:nth-child(5)>section:first-child{
-            width: 90vw;
-            height: 75vh;
-            border: red solid 1px;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            overflow: hidden;
-            overflow-y: scroll;
-        }
-        body>main>section:nth-child(5)>section:first-child>div{
-            width: 200px;
-            height: 230px;
-            border: black solid 1px;
-            position: relative;
-
-        }
-        body>main>section:nth-child(5)>section:first-child>div>img{
-            width: 200px;
-            height: 150px;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(2){
-            position: relative;
-            margin-top: 0;
-            margin-bottom: 0;
-            left: 5px;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(3){
-            position: absolute;
-            left: 5px;
-            bottom: 15px;
-            margin: auto;
-            font-weight: lighter;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>button{
-            width: 50px;
-            position: absolute;
-            right: 20px;
-            bottom: 15px;
-            background: red;
-            border-radius: 10px;
-        }
-        body>main>section:nth-child(5)>section:first-child>div:hover {
-            background: #ff1210;
-            opacity: 50%;
-            border: red solid 1px;
-            position: relative;
-            cursor: cell;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(5){
-            position: absolute;
-            left: 5px;
-            top: 180px;
-            margin: auto;
-            font-weight: lighter;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(6){
-            position: absolute;
-            left: 5px;
-            top: 200px;
-            margin: auto;
-            font-weight: lighter;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(7){
-            position: absolute;
-            left: 5px;
-            top: 220px;
-            margin: auto;
-            font-weight: lighter;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:first-child>div>label:nth-child(8){
-            /*display: none;*/
-        }
-        body>main>section:nth-child(5)>section:nth-child(2){
-            width: 600px;
-            height: 400px;
-            border: black solid 1px;
-            background: white;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
-            width: 298px;
-            height: 100%;
-            border: black solid 1px;
-            position: absolute;
-            left: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
-            width: 299px;
-            height: 100%;
-            border: black solid 1px ;
-            position: absolute;
-            right: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(1)>img{
-            width: 100%;
-            height: 50%;
-            border: black solid 1px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-            position: relative;
+        .col{
+            height: 160px;
             width: 280px;
-            height: 30px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            left: 10px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)>button{
-            width: 30px;
-            height: 30px;
-            background: #E5F4FD;
-            border-radius: 5px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>h3:nth-child(1){
-            margin-top: 5px;
-            margin-left: 20px;
-            margin-right: 0;
-            margin-bottom: 5px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>label:nth-child(3){
-            position: relative;
-            top: 10px;
-            left: 200px;
-            font-size: 17px;
-            color: #1c7430;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>label:nth-child(4){
-            position: relative;
-            top: 10px;
-            left: 200px;
-            font-size: 17px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>div:nth-child(5)>h3{
-            display: inline-block;
-            margin-left: 20px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>div:nth-child(5)>input{
-            width: 145px;
-            height: 25px;
-            margin-left: 20px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
-            width: 620px;
-            height: 40px;
-            position: absolute;
-            top: 90px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(1)>button{
-            width: 200px;
-            height: 40px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(1)>button:nth-child(1){
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(1)>button:nth-child(2){
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(1)>button:nth-child(3){
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
-            width: 90vw;
-            height: 75vh;
-            border: red solid 1px;
-            background: #ffffff;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            margin: auto;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(1){
-            width: 75%;
-            height: 75%;
-            border: black solid 1px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(2){
-            height: 75%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(3){
-            height: 28%;
-            width: 21.5%;
-            background: white;
-            position: absolute;
-            right: 2%;
-            top: 45%;
-            margin: auto;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(4){
-            position: absolute;
-            right: 2%;
-            bottom: 10%;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(4)>button{
-            width: 200px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(5){
-            position: absolute;
-            left: 2%;
-            bottom: 6%;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(5)>label{
-            font-size: 15px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(6){
-            position: absolute;
-            left: 2%;
-            bottom: 3%;
-            margin: auto;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(6)>label{
-            font-size: 12px;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(2)>div:nth-child(7){
-            width: 75%;
-            height: 5%;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(3){
-            width: 90vw;
-            height: 75vh;
-            border: red solid 1px;
-            background: #ffffff;
-            overflow: hidden;
-            overflow-y: scroll;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            margin: auto;
-            display: none;
-        }
-        body>main>section:nth-child(5)>section:nth-child(3)>div:nth-child(4){
-            width: 90vw;
-            height: 75vh;
-            border: red solid 1px;
-            background: #ffffff;
-            overflow: hidden;
-            overflow-y: scroll;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            margin: auto;
-            display: none;
-        }
-        body>main>section:nth-child(6){
-            width: 95vw;
-            height: 90vh;
-            border: black solid 1px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(6)>div:nth-child(1){
-            height: 88vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-        body>main>section:nth-child(6)>div:nth-child(1)>div{
-            height: 15vh;
-            position: relative;
         }
 
-        body>main>section:nth-child(6)>div:nth-child(1)>div>div>label:nth-child(1){
-            font-size: 15px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(6)>div:nth-child(1)>div>div>label:nth-child(2){
-            font-size: 25px;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        body>main>section:nth-child(6)>div:nth-child(2){
-            width: 33vw;
-            height: 35vh;
-            position: absolute;
-            top: 2.5%;
-            left: 23%;
-            margin: auto;
-        }
-        body>main>section:nth-child(6)>div:nth-child(3){
-            width: 33vw;
-            height: 35vh;
-            position: absolute;
-            top: 2.5%;
-            right: 2%;
-            margin: auto;
-        }
-        body>main>section:nth-child(6)>div:nth-child(4){
-            width: 71vw;
-            height: 45vh;
-            position: absolute;
-            top: 46%;
-            left: 23%;
-            margin: auto;
-        }
-        body>main>section:nth-child(7)>div{
-            display: inline-block;
-            position: relative;
-        }
-        body>main>section:nth-child(7){
-            width: 500px;
-            height: 370px;
-            border: 2px solid black;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 10px;
-        }
-        body>main>section:nth-child(7)>h3{
-            margin-left: 130px;
-            font-size: 25px;
-        }
-        body>main>section:nth-child(7)>div:nth-child(2)>input{
-            width: 450px;
-            height: 40px;
-            border: black solid 2px;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-        #txtUser{
-            position: relative;
-            top: 10px;
-            left: 20px;
-        }
-        #txtPassword{
-            position: relative;
-            top: 35px;
-            left: 20px;
+        .control-error{
+            font-size: 13px;
+            color: #b80000;
         }
 
-        body>main>section:nth-child(7)>div:nth-child(3){
-            position: relative;
-            top: 80px;
-            left: 20px;
-        }
-        body>main>section:nth-child(7)>div:nth-child(3)>button{
-            width: 200px;
-            height: 40px;
-            border: black solid 2px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        #btnSignIn{
-            margin-right: 50px;
-        }
-        body>main>section:nth-child(8)>div{
-            display: inline-block;
-            position: relative;
-        }
-        body>main>section:nth-child(8){
-            width: 500px;
-            height: 370px;
-            border: 2px solid black;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 10px;
-        }
-        body>main>section:nth-child(8)>h3{
-            margin-left: 130px;
-            font-size: 25px;
-        }
-        body>main>section:nth-child(8)>div:nth-child(2)>input{
-            width: 450px;
-            height: 40px;
-            border: black solid 2px;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-        #txtSignUpEmail{
-            position: relative;
-            top: 10px;
-            left: 20px;
-        }
-        #cmdAccessRole{
-            width: 450px;
-            height: 40px;
-            border: black solid 2px;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-        #txtPasswordSignUpEmail{
-            position: relative;
-            top: 35px;
-            left: 20px;
-        }
-        #txtNameSignUpEmail{
-            position: relative;
-            top: 55px;
-            left: 20px;
-        }
-        body>main>section:nth-child(8)>div:nth-child(2){
-            position: relative;
-            top: 80px;
-            left: 20px;
-        }
-        body>main>section:nth-child(8)>div:nth-child(3){
-            position: relative;
-            top: 135px;
-            left: 20px;
-        }
-        body>main>section:nth-child(8)>div:nth-child(3)>button{
-            width: 200px;
-            height: 40px;
-            border: black solid 2px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 20px;
-        }
+        .table>:not(caption)>*>* {
+            padding: 0.5rem 0.5rem;
+            background-color: #203744;
+            border-bottom-width: 1px;
 
-        #btnSignUpToApp{
-            margin-right: 50px;
         }
+        .table-info {
 
-        .logout{
-            margin-left: 560px;
+            color: #ffffff;
+            text-align: center;
+
         }
-
+        .table {
+            --bs-table-color: #fafdff;
+            text-align: center;
+        }
 
     </style>
-    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/fb497e39bc.js" crossorigin="anonymous"></script>
+
+
 </head>
-<body>
-<header id="header">
 
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg shadow p-3 mb-5" style="background-color: #0a212d">
-        <div class="container-fluid">
 
-            <a class="navbar-brand" href="#" style="color:white;"><i class="fa-brands fa-shopify"></i>Hello Shoes</a>
+<body style="background: rgb(237,243,242)">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg shadow p-3 mb-5" style="background-color: #0a212d">
+    <div class="container-fluid">
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" id="navDashboard" href="#" style="color: white">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navCustomer" style="color: white">Customer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navSale" style="color: white">Sale</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navSupplier" style="color: white">Supplier</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navInventory" style="color: white">Inventory</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navEmployee" style="color: white">Employee</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navUser" style="color: white">User</a>
-                    </li>
-                    <li class="logout">
-                        <a class="nav-link text-bg-success border-0 rounded-2" href="#" id="btnOrder" >Log Out</a>
-                    </li>
+        <a class="navbar-brand" href="#" style="color:white;">Hello Shoes</a>
 
-                </ul>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" id="btnHome" href="#" style="color: white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnItems" style="color: white">Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnSupplier" style="color: white">Suppliers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnCusotmer" style="color: white">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnStaff" style="color: white">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnOrderPage" style="color: white">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnSales" style="color: white">Sales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-bg-success border-0 rounded-2" href="#" id="btnOrder" >Place Order</a>
+                </li>
+
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-
-
-</header>
-<main>
-    <section id="customer">
-        <div>
-            <div >
-                <!--<div>
-                    <label for="txtCustomerCode">Customer Code : </label>
-                    <input type="text" id="txtCustomerCode">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Customer Code</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtCustomerCode">
-                </div>
-                <!--<div>
-                    <label for="txtCustomerName">Customer name : </label>
-                    <input type="text" id="txtCustomerName">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Customer Name</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtCustomerName">
-                </div>
-                <!--<div id="cusGender">
-                    <label>Gender : </label>
+<!--Dashboard Content Start-->
+<main id="dashboard" class="container-fluid">
+    <!--    Details Cards-->
+    <section>
+        <div class="mx-auto container text-center" style="margin: 0">
+            <div class="d-inline-flex row count">
+                <div class="shadow p-3 mb-5 col rounded border border-0 border-dark" style="margin: 10px; background-color: #ffffff">
                     <div>
-                        <&lt;!&ndash;div>
-                            <input type="checkbox" id="genderMale" value="MALE">
-                            <label for="genderMale"> Male</label><br>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="genderFemale" value="FEMALE">
-                            <label for="genderFemale"> Female</label><br>
-                        </div>&ndash;&gt;
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="genderMale" value="MALE">
-                            <label class="form-check-label" for="genderMale">Male</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="genderFemale" value="FEMALE">
-                            <label class="form-check-label" for="genderFemale">Female</label>
-                        </div>
+                        <h2 class="text-dark fs-1 fw-bold" style="color:black">
+                            Products <br>
+                            <h2 id="cdItemsCount" class="text-dark" style="color: black">0</h2>
+                        </h2>
                     </div>
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Gender</span>
-                    <select class="form-select form-select-sm" aria-label="Small select example" id="cusGender">
-                        <option value="MALE">MALE</option>
-                        <option value="FEMALE">FEMALE</option>
-                    </select>
+                    <div>
+                        <i class="fa-solid fa-boxes-stacked text-end text-light" style="font-size: 20px"></i>
+                    </div>
                 </div>
-                <!--<div>
-                    <label for="txtJoinDate">Join date as a loyalty
-                        customer.: </label>
-                    <input type="date" id="txtJoinDate">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Join date as a loyalty
-                            customer</span>
-                    <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtJoinDate">
+                <div class="shadow p-3 mb-5 col rounded border border-0 border-dark" style="margin: 10px; background-color: #ffffff">
+                    <div>
+                        <h2 class="text-dark fs-1 fw-bold" style="color:black">
+                            Customers <br>
+                            <h2 id="cdCustCount" class="text-dark" style="color: black">0</h2>
+                        </h2>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-users text-light"></i>
+                    </div>
                 </div>
-                <!-- <div>
-                     <label>Level : </label>
-                     <div>
-                         <div>
-                             <input type="checkbox" id="levelGold" value="Gold" >
-                             <label for="levelGold"> Gold</label><br>
-                         </div>
-                         <div>
-                             <input type="checkbox" id="levelSilver" value="Silver">
-                             <label for="levelSilver"> Silver</label><br>
-                         </div>
-                         <div>
-                             <input type="checkbox" id="levelBronze" value="Bronze">
-                             <label for="levelBronze"> Bronze</label><br>
-                         </div>
-                         <div>
-                             <input type="checkbox" id="levelNew" value="New">
-                             <label for="levelNew"> New</label><br>
-                         </div>
-                     </div>
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Level</span>
-                    <select class="form-select form-select-sm" aria-label="Small select example" id="customerLevel">
-                        <option value="Gold">Gold</option>
-                        <option value="Silver">Silver</option>
-                        <option value="Bronze">Bronze</option>
-                        <option value="New">New</option>
-                    </select>
-                </div>
-                <!--<div>
-                    <label for="txtTotalPoint">Total points : </label>
-                    <input type="text" id="txtTotalPoint">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Total points</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtTotalPoint">
-                </div>
-                <!--<div>
-                    <label for="txtDOB">DOB : </label>
-                    <input type="date" id="txtDOB">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >DOB</span>
-                    <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtDOB">
-                </div>
-                <!--<div>
-                    <label for="txtPurchaseDate">Recent purchase date and
-                        time: </label>
-                    <input type="datetime-local" id="txtPurchaseDate">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Recent purchase date and
-                            time</span>
-                    <input type="datetime-local" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtPurchaseDate">
+                <div class=" shadow p-3 mb-5 col rounded border border-0 border-dark" style="margin: 10px; background-color: #ffffff">
+                    <h2 class="text-dark fs-1 fw-bold">
+                        Orders <br>
+                        <h2 id="cdOrdersCount" class="text-dark" style="color: black">0</h2>
+                    </h2>
+                    <i class="fa-solid fa-cart-shopping text-light"></i>
                 </div>
             </div>
-            <div>
-                <!-- <div>
-                     <label for="txtAddressLine01">Address Line 01 : </label>
-                     <input type="text" id="txtAddressLine01">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 01</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine01">
-                </div>
-                <!--<div>
-                    <label for="txtAddressLine02">Address Line 02 : </label>
-                    <input type="text" id="txtAddressLine02">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 02</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine02">
-                </div>
-                <!--<div>
-                    <label for="txtAddressLine03">Address Line 03 : </label>
-                    <input type="text" id="txtAddressLine03">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 03</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine03">
-                </div>
-                <!--<div>
-                    <label for="txtAddressLine04">Address Line 04 : </label>
-                    <input type="text" id="txtAddressLine04">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 04</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine04">
-                </div>
-                <!--<div>
-                    <label for="txtAddressLine05">Address Line 05 : </label>
-                    <input type="text" id="txtAddressLine05">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 05</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine05">
-                </div>
-                <!--<div>
-                    <label for="txtContactNo">Contact No. : </label>
-                    <input type="text" id="txtContactNo">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Contact No</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtContactNo">
-                </div>
-                <!-- <div>
-                     <label for="txtEmail">Email : </label>
-                     <input type="text" id="txtEmail">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Email</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmail">
-                </div>
-                <button type="button" class="btn btn-outline-primary" id="btnSaveCustomer">Save</button>
-                <button type="button" class="btn btn-outline-secondary"  id="btnCustomerUpdate">Update</button>
-                <button type="button" class="btn btn-outline-success" id="btnCustomerDelete">Delete</button>
-            </div>
-        </div>
-        <div >
-            <table class="table mb-5" data-bs-spy="scroll">
-                <thead style="border: black">
-                <tr style="border: black">
-                    <th scope="col" style="background: #0a58ca">Code</th>
-                    <th scope="col" style="background: #0a58ca">Name</th>
-                    <th scope="col" style="background: #0a58ca">Gender</th>
-                    <th scope="col" style="background: #0a58ca">Join date</th>
-                    <th scope="col" style="background: #0a58ca">Level</th>
-                    <th scope="col" style="background: #0a58ca">Total points</th>
-                    <th scope="col" style="background: #0a58ca">DOB</th>
-                    <th scope="col" style="background: #0a58ca">Address</th>
-                    <th scope="col" style="background: #0a58ca">Contact No</th>
-                    <th scope="col" style="background: #0a58ca">Email</th>
-                    <th scope="col" style="background: #0a58ca">purchase date &
-                        time</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider" id="tblCustomer" style="border: black">
-
-                </tbody>
-            </table>
         </div>
     </section>
-    <section id="supplier">
-        <div>
-            <div>
-                <!-- <div>
-                     <label>Supplier Code : </label>
-                     <input type="text" id="txtSupplierCode">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Supplier Code</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierCode">
-                </div>
-                <!-- <div>
-                     <h4>Supplier name : </h4>
-                     <input type="text" id="txtSupplierName">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Supplier name</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierName">
-                </div>
-                <!--  <div>
-                      <h4>Category : </h4>
-                      <input type="text" id="txtSupplierCategory">
-                  </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Category</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierCategory">
-                </div>
-                <!-- <div>
-                     <h4>Contact No.1 : </h4>
-                     <input type="text" id="txtSupplierContactNo1">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Contact No.1</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierContactNo1">
-                </div>
-                <!-- <div>
-                     <h4>Contact No.2 : </h4>
-                     <input type="text" id="txtSupplierContactNo2">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Contact No.2</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierContactNo2">
-                </div>
-                <!-- <div>
-                     <h4>Email : </h4>
-                     <input type="text" id="txtSupplierEmail">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Email</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierEmail">
-                </div>
-            </div>
-            <div>
-                <!--<div>
-                    <h4>Address Line 01 : </h4>
-                    <input type="text" id="txtSupplierAddress1">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 01</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress1">
-                </div>
-                <!--  <div>
-                      <h4>Address Line 02 : </h4>
-                      <input type="text" id="txtSupplierAddress2">
-                  </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 02</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress2">
-                </div>
-                <!-- <div>
-                     <h4>Address Line 03 : </h4>
-                     <input type="text" id="txtSupplierAddress3">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 03</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress3">
-                </div>
-                <!-- <div>
-                     <h4>Address Line 04 : </h4>
-                     <input type="text" id="txtSupplierAddress4">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 04</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress4">
-                </div>
-                <!-- <div>
-                     <h4>Address Line 05 : </h4>
-                     <input type="text" id="txtSupplierAddress5">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 05</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress5">
-                </div>
-                <!--<div>
-                    <h4>Address Line 06 : </h4>
-                    <input type="text" id="txtSupplierAddress6">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 06</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierAddress6">
-                </div>
-                <button type="button" class="btn btn-outline-primary" id="btnSaveSupplier">Save</button>
-                <button type="button" class="btn btn-outline-secondary"  id="btnSupplirUpdate">Update</button>
-                <button type="button" class="btn btn-outline-success" id="btnSupplierDelete">Delete</button>
-            </div>
-        </div>
-        <div>
-            <table class="table mb-5" >
-                <thead style="border: black">
-                <tr style="border: black">
-                    <th scope="col" style="background: #0a58ca">Code</th>
-                    <th scope="col" style="background: #0a58ca">Name</th>
-                    <th scope="col" style="background: #0a58ca">Category</th>
-                    <th scope="col" style="background: #0a58ca">Address</th>
-                    <th scope="col" style="background: #0a58ca">Contact No.1</th>
-                    <th scope="col" style="background: #0a58ca">Contact No.2</th>
-                    <th scope="col" style="background: #0a58ca">Email</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider" id="tblSupplier" style="border: black">
 
-                </tbody>
-            </table>
+    <!--    Order History Table-->
+
+    <section class="container-fluid bg-light border-0 rounded-3 shadow-sm pb-5 ">
+        <div class="row">
+            <div class="col mt-5 mb-5 ">
+                <h3>Order History</h3>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="table-info" scope="col">OrderID</th>
+                        <th class="table-info" scope="col">ItemQty</th>
+                        <th class="table-info" scope="col">BillValue</th>
+                        <th class="table-info" scope="col">Customer</th>
+                        <th class="table-info" scope="col">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblOrderHistory">
+
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+
     </section>
-    <section id="employee">
-        <div>
-            <div>
-                <div id="profilePicDiv">
-                    <img src="assets/image/user.png" id="profilePic">
-                    <label for="inputFile">Add image</label>
-                    <input type="file" id="inputFile">
-                </div>
-                <div>
-                    <!--<div>
-                        <h4>Employee code : </h4>
-                        <input type="text" id="txtEmployeeCode">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Employee code</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeCode">
+
+
+</main>
+<!--Dashboard Content End-->
+
+<!--item Content Start-->
+<main id="items" style="display: none" class="container-fluid ">
+    <section id="item">
+
+        <!-- Button -->
+        <div class="modal-footer col-12 mb-3">
+            <button class="btn btn-success me-1" type="button" data-bs-toggle="modal" data-bs-target="#addItemModal"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <!-- Add Item Modal -->
+        <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addItemModalLabel">Add Items</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <!--<div>
-                        <h4>Employee name : </h4>
-                        <input type="text" id="txtEmployeeName">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Employee name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeName">
-                    </div>
-                    <!--<div >
-                        <h4>Gender : </h4>
-                        <div>
+                    <div class="modal-body">
+                        <form id="itemForm">
                             <div>
-                                <input type="checkbox"  value="MALE" id="employeeMale">
-                                <label for="genderMale"> Male</label><br>
+                                <div>
+                                    <div>
+                                        <img src="assets/image/875068.png" id="itemPicture" style="width: 30px"height="30px">
+                                        <label for="inputItemPicture">Add image</label>
+                                        <input type="file" id="inputItemPicture">
+                                    </div>
+                                    <div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Item code</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemCode">
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Item Decs</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemDec">
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Gender</span>
+                                            <select class="form-select form-select-sm" aria-label="Small select example" id="cmdItemCategory">
+                                                <option>Formal Shoes</option>
+                                                <option>Casual Shoes</option>
+                                                <option>Industrial Shoes</option>
+                                                <option>Sport Shoes</option>
+                                                <option>Heel</option>
+                                                <option>Flats</option>
+                                                <option>Wedges</option>
+                                                <option>Flip Flops</option>
+                                                <option>Sandals</option>
+                                                <option>Slippers</option>
+                                                <option>Shoe shampoo</option>
+                                                <option>POLB, POLBR, POLDBR</option>
+                                                <option>Full-socks</option>
+                                                <option>Half-socks</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Supplier Code</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierCodeForItem">
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Supplier Name</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierNameForItem">
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Unit price - Sale</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtUnitPriceSale">
+                                        </div>
+
+                                        <div class="input-group input-group-sm mb-3">
+                                            <span class="input-group-text" >Unit price - Buy</span>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtUnitPriceBuy">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 5</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize5Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 6</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize6Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 7</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize7Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 8</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize8Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 9</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize9Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 10</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize10Qty">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Size 11</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize11Qty">
+                                    </div>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Expected Profit</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemExpectedProfit">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Profit margin</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemProfitMargin">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" >Status</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemStatus">
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary" id="btnInventorySave">Save</button>
+                                    <button type="button" class="btn btn-outline-secondary"  id="btnInventoryUpdate">Update</button>
+                                    <button type="button" class="btn btn-outline-success" id="btnInventoryDelete">Delete</button>
+
+                                </div>
                             </div>
-                            <div>
-                                <input type="checkbox"  value="FEMALE" id="employeeFemale">
-                                <label for="genderFemale"> Female</label><br>
-                            </div>
-                        </div>
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Gender</span>
-                        <select class="form-select form-select-sm" aria-label="Small select example" id="employeeGender">
-                            <option value="MALE">MALE</option>
-                            <option value="FEMALE">FEMALE</option>
-                        </select>
-                    </div>
-                    <!--<div>
-                        <h4>Status : </h4>
-                        <input type="text" id="txtEmployeeStatus">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Status</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeStatus">
-                    </div>
-                    <!--<div>
-                        <h4>Designation : </h4>
-                        <input type="text" id="txtEmployeeDesignation">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Designation</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeDesignation">
-                    </div>
-                    <!-- <div>
-                         <h4>Access Role : </h4>
-                         <input type="text" id="txtEmployeeAccessRole">
-                     </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Access Role</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAccessRole">
-                    </div>
-                    <!-- <div>
-                         <h4>Date of Join : </h4>
-                         <input type="date" id="txtEmployeeDateOfJoin">
-                     </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Date of Join</span>
-                        <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeDateOfJoin">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Attached Branch</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAttachedBranch">
-                    </div>
-                </div>
-            </div>
-            <div>
-                <!-- <div>
-                     <h4>Attached Branch : </h4>
-                     <input type="text" id="txtEmployeeAttachedBranch">
-                 </div>-->
 
-                <!--<div>
-                    <h4>DOB : </h4>
-                    <input type="date" id="txtEmployeeDOB">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >DOB</span>
-                    <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeDOB">
-                </div>
-                <!--<div>
-                    <h4>Address Line 01 : </h4>
-                    <input type="text" id="txtEmployeeAddressLine1">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 01</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAddressLine1">
-                </div>
-                <!-- <div>
-                     <h4>Address Line 02 : </h4>
-                     <input type="text" id="txtEmployeeAddressLine2">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 02</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAddressLine2">
-                </div>
-                <!-- <div>
-                     <h4>Address Line 03 : </h4>
-                     <input type="text" id="txtEmployeeAddressLine3">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 03</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAddressLine3">
-                </div>
-                <!--<div>
-                    <h4>Address Line 04 : </h4>
-                    <input type="text" id="txtEmployeeAddressLine4">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 04</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAddressLine4">
-                </div>
-                <!--<div>
-                    <h4>Address Line 05 : </h4>
-                    <input type="text" id="txtEmployeeAddressLine5">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Address Line 05</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeAddressLine5">
-                </div>
-                <!--<div>
-                    <h4>Contact No. : </h4>
-                    <input type="text" id="txtEmployeeContactNo">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Contact No</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeContactNo">
-                </div>
-                <!-- <div>
-                     <h4>Email : </h4>
-                     <input type="text" id="txtEmployeeEmail">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Email</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeEmail">
-                </div>
-                <!--<div>
-                    <h4>Inform in case of
-                        emergency : </h4>
-                    <input type="text" id="txtEmployeeCaseOfEmergency" >
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Inform in case of emergency</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeCaseOfEmergency">
-                </div>
-                <!-- <div>
-                     <h4>Emergency Contact : </h4>
-                     <input type="text" id="txtEmployeeEmergencyContact">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Emergency Contact</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmployeeEmergencyContact">
-                </div>
-                <button type="button" class="btn btn-outline-primary" id="btnEmployeeSave">Save</button>
-                <button type="button" class="btn btn-outline-secondary"  id="btnEmployeeUpdate">Update</button>
-                <button type="button" class="btn btn-outline-success" id="btnEmployeeDelete">Delete</button>
-            </div>
-        </div>
-        <div>
-            <table class="table mb-5" >
-                <thead style="border: black">
-                <tr style="border: black">
-                    <th scope="col" style="background: #0a58ca">Code</th>
-                    <th scope="col" style="background: #0a58ca"></th>
-                    <th scope="col" style="background: #0a58ca">Name</th>
-                    <th scope="col" style="background: #0a58ca">Gender</th>
-                    <th scope="col" style="background: #0a58ca">Status</th>
-                    <th scope="col" style="background: #0a58ca">Designation</th>
-                    <th scope="col" style="background: #0a58ca">Access Role</th>
-                    <th scope="col" style="background: #0a58ca">DOB</th>
-                    <th scope="col" style="background: #0a58ca">Date of Join </th>
-                    <th scope="col" style="background: #0a58ca">Attached Branch</th>
-                    <th scope="col" style="background: #0a58ca">Address</th>
-                    <th scope="col" style="background: #0a58ca">Contact No</th>
-                    <th scope="col" style="background: #0a58ca">Email</th>
-                    <th scope="col" style="background: #0a58ca">Inform in case of emergency</th>
-                    <th scope="col" style="background: #0a58ca">Emergency Contact</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider" id="tblEmployee" style="border: black">
 
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section id="inventory">
-        <div>
-            <div>
-                <div>
-                    <img src="assets/image/875068.png" id="itemPicture">
-                    <label for="inputItemPicture">Add image</label>
-                    <input type="file" id="inputItemPicture">
-                </div>
-                <div>
-                    <!-- <div>
-                         <h4>Item code : </h4>
-                         <input type="text" id="txtItemCode" >
-                     </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Item code</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemCode">
-                    </div>
-                    <!--<div>
-                        <h4>Item Decs : </h4>
-                        <input type="text" id="txtItemName" >
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Item Decs</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemName">
-                    </div>
-                    <!-- <div>
-                         <h4>Category : </h4>
-                         <select name="category" id="cmdItemCategory" >
-                             <option>Formal Shoes</option>
-                             <option>Casual Shoes</option>
-                             <option>Industrial Shoes</option>
-                             <option>Sport Shoes</option>
-                             <option>Heel</option>
-                             <option>Flats</option>
-                             <option>Wedges</option>
-                             <option>Flip Flops</option>
-                             <option>Sandals</option>
-                             <option>Slippers</option>
-                             <option>Shoe shampoo</option>
-                             <option>POLB, POLBR, POLDBR</option>
-                             <option>Full-socks</option>
-                             <option>Half-socks</option>
-                         </select>
-                     </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Gender</span>
-                        <select class="form-select form-select-sm" aria-label="Small select example" id="cmdItemCategory">
-                            <option>Formal Shoes</option>
-                            <option>Casual Shoes</option>
-                            <option>Industrial Shoes</option>
-                            <option>Sport Shoes</option>
-                            <option>Heel</option>
-                            <option>Flats</option>
-                            <option>Wedges</option>
-                            <option>Flip Flops</option>
-                            <option>Sandals</option>
-                            <option>Slippers</option>
-                            <option>Shoe shampoo</option>
-                            <option>POLB, POLBR, POLDBR</option>
-                            <option>Full-socks</option>
-                            <option>Half-socks</option>
-                        </select>
-                    </div>
-                    <!--<div>
-                   <h4>Supplier Code : </h4>
-                   <input type="text" id="txtSupplierCodeForItem">
-               </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Supplier Code</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierCodeForItem">
-                    </div>
-                    <!--<div>
-                        <h4>Supplier Name : </h4>
-                        <input type="text" id="txtSupplierNameForItem">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Supplier Name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSupplierNameForItem">
-                    </div>
-                    <!--<div>
-                        <h4>Unit price - Sale : </h4>
-                        <input type="text" id="txtUnitPriceSale">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Unit price - Sale</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtUnitPriceSale">
-                    </div>
-                    <!--<div>
-                        <h4>Unit price - Buy : </h4>
-                        <input type="text" id="txtUnitPriceBuy">
-                    </div>-->
-                    <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" >Unit price - Buy</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtUnitPriceBuy">
-                    </div>
-                    <!--<div>
-                        <h4>Expected Profit : </h4>
-                        <input type="text" id="txtItemExpectedProfit">
-                    </div>-->
-                </div>
-            </div>
-            <div>
-                <!--  <div class="input-group input-group-sm mb-3">
-                      <span class="input-group-text" >Gender</span>
-                      <select class="form-select form-select-sm" aria-label="Small select example" id="employeeGender">
-                          <option value="MALE">MALE</option>
-                          <option value="FEMALE">FEMALE</option>
-                      </select>
-                  </div>-->
-                <!-- <div>
-                         <label> Size 5</label>
-                         <input type="text" placeholder="Quantity" id="txtSize5Qty">
-                     </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 5</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize5Qty">
-                </div>
-                <!--<div>
-                    <label> Size  6</label>
-                    <input type="text" placeholder="Quantity" id="txtSize6Qty">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 6</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize6Qty">
-                </div>
-                <!--<div>
-                    <label> Size  7</label>
-                    <input type="text" placeholder="Quantity" id="txtSize7Qty">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 7</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize7Qty">
-                </div>
-                <!-- <div>
-                     <label> Size  8</label>
-                     <input type="text" placeholder="Quantity" id="txtSize8Qty">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 8</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize8Qty">
-                </div>
-                <!--<div>
-                    <label> Size  9</label>
-                    <input type="text" placeholder="Quantity" id="txtSize9Qty">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 9</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize9Qty">
-                </div>
-                <!--<div>
-                    <label> Size 10</label>
-                    <input type="text" placeholder="Quantity" id="txtSize10Qty">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 10</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize10Qty">
-                </div>
-                <!-- <div>
-                     <label> Size 11</label>
-                     <input type="text" placeholder="Quantity" id="txtSize11Qty">
-                 </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Size 11</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtSize11Qty">
-                </div>
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Expected Profit</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemExpectedProfit">
-                </div>
-                <!--<div>
-                    <h4>Profit margin : </h4>
-                    <input type="text" id="txtItemProfitMargin">
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Profit margin</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemProfitMargin">
-                </div>
-                <!--<div>
-                    <h4>Status : </h4>
-                    <textarea id="txtItemStatus"></textarea>
-                </div>-->
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" >Status</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtItemStatus">
-                </div>
-                <button type="button" class="btn btn-outline-primary" id="btnInventorySave">Save</button>
-                <button type="button" class="btn btn-outline-secondary"  id="btnInventoryUpdate">Update</button>
-                <button type="button" class="btn btn-outline-success" id="btnInventoryDelete">Delete</button>
 
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div>
@@ -1743,310 +338,567 @@
             </table>
         </div>
     </section>
-    <section id="sale">
-        <section id="itemDetails">
-        </section>
-        <section id="itemSelectForm">
-            <div>
-                <img  alt="itemPic" id="itemPicForDetailForm">
-                <label id="itemCodeForDetailForm"></label>
-                <label id="itemNameForDetailForm"></label>
-                <label id="itemStatusForDetailForm"></label>
-                <label id="itemPriceForDetailForm"></label>
-            </div>
-            <div>
-                <label>Sizes</label>
-                <div>
-                    <button id="btnSize5">5</button>
-                    <button id="btnSize6">6</button>
-                    <button id="btnSize7">7</button>
-                    <button id="btnSize8">8</button>
-                    <button id="btnSize9">9</button>
-                    <button id="btnSize10">10</button>
-                    <button id="btnSize11">11</button>
-                </div>
-                <label id="lblSizeStock"></label>
-                <label id="lblSizeQuantity"></label>
-                <label > Size :</label>
-                <label id="lblSizeOfItem"></label>
+</main>
+<!--item Content End-->
 
-                <div>
-                    <label for="txtGetQuantity">Quantity : </label>
-                    <input type="text" id="txtGetQuantity" >
-                </div>
-                <button id="btnBackToSale">Back</button>
-                <button id="btnAddToCart">Add</button>
-            </div>
-        </section>
-        <section>
-            <div>
-                <button type="button" class="btn btn-outline-primary" id="btnToPurchaseForm">Purchase</button>
-                <button type="button" class="btn btn-outline-secondary"  id="btnToRefundForm">Refund</button>
-                <button type="button" class="btn btn-outline-success" id="btnToSalesForm">Sales</button>
-            </div>
-            <div id="purchaseForm">
-                <div>
-                    <table class="table table-hover">
-                        <thead >
-                        <tr style="border: black">
-                            <th scope="col" >Item Code</th>
-                            <th scope="col" >Item Desc</th>
-                            <th scope="col" >Size</th>
-                            <th scope="col" >Price</th>
-                            <th scope="col" >Quantity</th>
-                            <th scope="col" >Total</th>
-                        </tr>
-                        </thead>
-                        <tbody class="table-group-divider" id="tblPurchase" style="border: black">
 
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-10 col-10 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                    <div class="card h-100">
-                        <div class="card-header bg-primary">
-                            <button type="button" class="btn btn-success mt-4" id="btnCashPayment">Cash</button>
-                            <button type="button" class="btn btn-success mt-4" id="btnCardPayment">Card</button>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span  style="color: #3d98ef;font-size: 13px;">Total : </span>
-                                        </div>
-                                        <div class="col-12">
-                                            <span id="txtTotal" style="font-size: 30px;color: #3d98ef;">0</span> Rs/=
-                                        </div>
-                                    </div>
 
-                                </div>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span  style="color: #ef5350;font-size: 13px;">SubTotal : </span>
-                                        </div>
-                                        <div class="col-12">
-                                            <span id="txtSubtotal" style="color: #ef5350;font-size: 30px;">0</span> Rs/=
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row">
 
-                                            <div class="mb-3">
-                                                <label for="txtCash" class="form-label">Cash</label>
-                                                <input type="text" class="form-control" id="txtCash" placeholder="Cash">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row">
-                                            <div class="mb-3">
-                                                <label for="txtDiscount" class="form-label">Discount</label>
-                                                <input type="text" class="form-control" id="txtDiscount" placeholder="Discount">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="txtBalance" class="form-label">Balance</label>
-                                    <input type="text" class="form-control" id="txtBalance" placeholder="Balance">
-                                </div>
-                            </form>
-                        </div>
+
+
+
+
+
+
+
+<!--Supplier Content Start-->
+<main id="supplier" style="display: none" class="container-fluid ">
+    <section id="suppliers">
+
+        <!-- Button -->
+        <div class="modal-footer col-12 mb-3">
+            <button class="btn btn-success me-1" type="button" data-bs-toggle="modal" data-bs-target="#addSupplierModal"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <!-- Add Supplier Modal -->
+        <div class="modal fade" id="addSupplierModal" tabindex="-1" aria-labelledby="addSupplierModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addSupplierModalLabel">Add a Supplier</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-                <div id="cardPaymentForm">
-                    <form >
-                        <div class="col-12">
-                            <div class="row">
-
-                                <div class="mb-3">
-                                    <label  class="form-label">Cash</label>
-                                    <input type="text" class="form-control" placeholder="Cash">
-                                </div>
+                    <div class="modal-body">
+                        <form id="supplierForm">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Supplier Code</span>
+                                <input type="text" class="form-control" id="txtSupplierCode" required>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row">
-
-                                <div class="mb-3">
-                                    <label  class="form-label">Cash</label>
-                                    <input type="text" class="form-control" placeholder="Cash">
-                                </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Supplier Name</span>
+                                <input type="text" class="form-control" id="txtSupplierName" required>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-primary"  id="btnBackFromPurchase">Back</button>
-                    <button type="button" class="btn btn-outline-primary" id="btnPurchase">Purchase</button>
-                    <button type="button" class="btn btn-outline-primary" id="btnClearPurchase">Clear</button>
-                </div>
-                <div>
-                    <label class="form-label">Order ID :</label>
-                    <label class="form-label" id="lblOrderId"></label>
-                </div>
-                <div>
-                    <label class="form-label">Date :</label>
-                    <label class="form-label" id="lblOrderDate">OR00-001</label>
-                </div>
-                <div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Customer Code" id="txtCustomerCodeForPurchase">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Category</span>
+                                <input type="text" class="form-control" id="txtSupplierCategory" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Contact No.1</span>
+                                <input type="text" class="form-control" id="txtSupplierContactNo1" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Contact No.2</span>
+                                <input type="text" class="form-control" id="txtSupplierContactNo2">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="email" class="form-control" id="txtSupplierEmail" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 01</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress1" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 02</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress2">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 03</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress3">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 04</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress4">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 05</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress5">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 06</span>
+                                <input type="text" class="form-control" id="txtSupplierAddress6">
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary"  id="btnSupplirUpdate">Update</button>
+                            <button type="button" class="btn btn-outline-success" id="btnSupplierDelete">Delete</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-outline-primary" id="btnSaveSupplier">Save</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Employee Code" id="txtEmployeeCodeForPurchase">
-                    </div>
                 </div>
             </div>
-            <div id="refundPurchase">
-                <button type="button" class="btn btn-outline-primary" id="btnToSaleFromRefund">Back</button>
-                <table class="table table-hover">
-                    <thead >
-                    <tr style="border: black">
-                        <th scope="col" >No</th>
-                        <th scope="col" >OrderNO</th>
-                        <th scope="col" >Item code</th>
-                        <th scope="col" >Item Desc</th>
-                        <th scope="col" >Size</th>
-                        <th scope="col" >Quantity</th>
-                        <th scope="col" >unitPrice</th>
-                    </tr>
-                    </thead>
-                    <tbody class="table-group-divider" id="tblForRefundDetails" style="border: black">
-
-                    </tbody>
-                </table>
-            </div>
-            <div id="purchaseDetails">
-                <button type="button" class="btn btn-outline-primary" id="btnToSaleFromPurchase">Back</button>
-                <table class="table table-hover">
-                    <thead >
-                    <tr style="border: black">
-                        <th scope="col" >Order No</th>
-                        <th scope="col" >Customer Code</th>
-                        <th scope="col" >Customer Name</th>
-                        <th scope="col" >Total Price</th>
-                        <th scope="col" >Purchase Date</th>
-                        <th scope="col" >Payment Method</th>
-                        <th scope="col" >Added Point</th>
-                        <th scope="col" >Cashier Name</th>
-                        <th scope="col" >Employee Code</th>
-                    </tr>
-                    </thead>
-                    <tbody class="table-group-divider" id="tblPurchaseDetails" style="border: black">
-
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </section>
-    <section id="admin">
+        </div>
         <div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <label>Today's sales</label>
-                    <label>Rs 25000</label>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <label>Today's Profit</label>
-                    <label>Rs 25000</label>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <label>Most sale item</label>
-                    <label>Adidas</label>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <label>Customers</label>
-                    <label>100</label>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <label>Total items</label>
-                    <label>100</label>
-                </div>
-            </div>
-        </div>
-        <div class="card" >
-            <img  class="card-img-top" alt="..." id="imgMostSellItem">
-            <div class="card-body">
-                <label id="lblMostSellItemCode"></label>
-                <label id="lblMostSellItemName"></label>
-                <label id="lblMostSellItemStatus"></label>
-                <label id="lblMostSellItemPrice"></label>
-            </div>
-        </div>
-        <div class="card" >
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" >
-            <table class="table table-hover">
-                <thead >
+            <table class="table mb-5" >
+                <thead style="border: black">
                 <tr style="border: black">
-                    <th scope="col" >Item Code</th>
-                    <th scope="col" >Item Desc</th>
-                    <th scope="col" >Size</th>
-                    <th scope="col" >Price</th>
-                    <th scope="col" >Quantity</th>
-                    <th scope="col" >Total</th>
+                    <th scope="col" style="background: #0a58ca">Code</th>
+                    <th scope="col" style="background: #0a58ca">Name</th>
+                    <th scope="col" style="background: #0a58ca">Category</th>
+                    <th scope="col" style="background: #0a58ca">Address</th>
+                    <th scope="col" style="background: #0a58ca">Contact No.1</th>
+                    <th scope="col" style="background: #0a58ca">Contact No.2</th>
+                    <th scope="col" style="background: #0a58ca">Email</th>
                 </tr>
                 </thead>
-                <tbody class="table-group-divider"  style="border: black">
+                <tbody class="table-group-divider" id="tblSupplier" style="border: black">
 
                 </tbody>
             </table>
         </div>
-
     </section>
-    <section id="log-in-page">
-        <h3>Hello, Shoes (Pvt) Ltd</h3>
-        <div>
-            <input type="text" placeholder="User" id="txtUser">
-            <input type="text" placeholder="Password" id="txtPassword" >
+</main>
+<!--Supplier Content End-->
+
+
+
+
+<!--Customer Content Start-->
+<main id="customer" style="display: none" class="container-fluid">
+    <section id="customers">
+        <!-- Button -->
+        <div class="modal-footer col-12 mb-3">
+            <button class="btn btn-success me-1" type="button" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa-solid fa-plus"></i> Add</button>
         </div>
 
-        <div>
-            <button type="button" id="btnSignIn">Sign In</button>
-            <button type="button" id="btnSignUp">Sign Up</button>
-        </div>
-    </section>
-    <section id="sign-up-page">
-        <h3>Hello, Shoes (Pvt) Ltd</h3>
-        <div>
-            <div >
-                <select class="form-select form-select-sm" aria-label="Small select example" id="cmdAccessRole">
-                    <option>ADMIN</option>
-                    <option>USER</option>
-                </select>
+        <!-- Add Customer MODAL -->
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addModalLabel">Add a Customer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div>
+                                <div>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Customer Code</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtCustomerCode">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Customer Name</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtCustomerName">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Gender</span>
+                                        <select class="form-select form-select-sm" aria-label="Small select example" id="cusGender">
+                                            <option value="MALE">MALE</option>
+                                            <option value="FEMALE">FEMALE</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Join date as a loyalty customer</span>
+                                        <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtJoinDate">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Level</span>
+                                        <select class="form-select form-select-sm" aria-label="Small select example" id="customerLevel">
+                                            <option value="Gold">Gold</option>
+                                            <option value="Silver">Silver</option>
+                                            <option value="Bronze">Bronze</option>
+                                            <option value="New">New</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Total points</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtTotalPoint">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">DOB</span>
+                                        <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtDOB">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Recent purchase date and time</span>
+                                        <input type="datetime-local" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtPurchaseDate">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Address Line 01</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine01">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Address Line 02</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine02">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Address Line 03</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine03">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Address Line 04</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine04">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Address Line 05</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtAddressLine05">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Contact No</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtContactNo">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Email</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="txtEmail">
+                                    </div>
+
+                                    <button type="button" class="btn btn-outline-secondary" id="btnCustomerUpdate">Update</button>
+                                    <button type="button" class="btn btn-outline-success" id="btnCustomerDelete">Delete</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-primary" id="btnSaveCustomer">Save</button>
+                    </div>
+                </div>
             </div>
-            <input type="text" placeholder="Email" id="txtSignUpEmail">
-            <input type="text" placeholder="Password" id="txtPasswordSignUpEmail" >
-            <input type="text" placeholder="User" id="txtNameSignUpEmail" >
         </div>
 
+        <!-- Customer Table -->
         <div>
-            <button type="button" id="btnSignUpToApp">Sign Up</button>
-            <button type="button" id="btnBackLogIn">Back</button>
+            <table class="table mb-5" data-bs-spy="scroll">
+                <thead style="border: black">
+                <tr style="border: black">
+                    <th scope="col" style="background: #0a58ca">Code</th>
+                    <th scope="col" style="background: #0a58ca">Name</th>
+                    <th scope="col" style="background: #0a58ca">Gender</th>
+                    <th scope="col" style="background: #0a58ca">Join date</th>
+                    <th scope="col" style="background: #0a58ca">Level</th>
+                    <th scope="col" style="background: #0a58ca">Total points</th>
+                    <th scope="col" style="background: #0a58ca">DOB</th>
+                    <th scope="col" style="background: #0a58ca">Address</th>
+                    <th scope="col" style="background: #0a58ca">Contact No</th>
+                    <th scope="col" style="background: #0a58ca">Email</th>
+                    <th scope="col" style="background: #0a58ca">Purchase date & time</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tblCustomer" style="border: black">
+                <!-- Customer data will be populated here -->
+                </tbody>
+            </table>
         </div>
     </section>
 </main>
-<script src="assets/js/jquery-3.7.0.min.js"></script>
-<script src="assets/Bootstrap/js/bootstrap.js"></script>
+
+
+<!--staff Content Start-->
+<main id="staff" style="display: none" class="container-fluid">
+    <section id="staffs">
+        <!-- Button -->
+        <div class="modal-footer col-12 mb-3">
+            <button class="btn btn-success me-1" type="button" data-bs-toggle="modal" data-bs-target="#addStaffModal"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <!-- Add Staff Modal -->
+        <div class="modal fade" id="addStaffModal" tabindex="-1" aria-labelledby="addStaffModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addStaffModalLabel">Add a Staff Member</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="profilePicDiv">
+                        <img src="assets/image/user.png" id="profilePic" style="width: 30px"height="30">
+                        <label for="inputFile">Add image</label><br>
+                        <input type="file" id="inputFile">
+                    </div>
+                    <div class="modal-body">
+                        <form id="staffForm">
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Employee Code</span>
+                                <input type="text" class="form-control" id="txtEmployeeCode" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Employee Name</span>
+                                <input type="text" class="form-control" id="txtEmployeeName" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Gender</span>
+                                <select class="form-select form-select-sm" id="employeeGender" required>
+                                    <option value="MALE">MALE</option>
+                                    <option value="FEMALE">FEMALE</option>
+                                </select>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Status</span>
+                                <input type="text" class="form-control" id="txtEmployeeStatus" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Designation</span>
+                                <input type="text" class="form-control" id="txtEmployeeDesignation" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Access Role</span>
+                                <input type="text" class="form-control" id="txtEmployeeAccessRole" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Date of Join</span>
+                                <input type="date" class="form-control" id="txtEmployeeDateOfJoin" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Attached Branch</span>
+                                <input type="text" class="form-control" id="txtEmployeeAttachedBranch" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">DOB</span>
+                                <input type="date" class="form-control" id="txtEmployeeDOB" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 01</span>
+                                <input type="text" class="form-control" id="txtEmployeeAddressLine1" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 02</span>
+                                <input type="text" class="form-control" id="txtEmployeeAddressLine2">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 03</span>
+                                <input type="text" class="form-control" id="txtEmployeeAddressLine3">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 04</span>
+                                <input type="text" class="form-control" id="txtEmployeeAddressLine4">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Address Line 05</span>
+                                <input type="text" class="form-control" id="txtEmployeeAddressLine5">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Contact No</span>
+                                <input type="text" class="form-control" id="txtEmployeeContactNo" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="email" class="form-control" id="txtEmployeeEmail" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Inform in case of emergency</span>
+                                <input type="text" class="form-control" id="txtEmployeeCaseOfEmergency" required>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Emergency Contact</span>
+                                <input type="text" class="form-control" id="txtEmployeeEmergencyContact" required>
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary" id="btnEmployeeUpdate">Update</button>
+                            <button type="button" class="btn btn-outline-success" id="btnEmployeeDelete">Delete</button>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-outline-primary" id="btnEmployeeSave">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <table class="table mb-5" >
+                <thead style="border: black">
+                <tr style="border: black">
+                    <th scope="col" style="background: #0a58ca">Code</th>
+                    <th scope="col" style="background: #0a58ca"></th>
+                    <th scope="col" style="background: #0a58ca">Name</th>
+                    <th scope="col" style="background: #0a58ca">Gender</th>
+                    <th scope="col" style="background: #0a58ca">Status</th>
+                    <th scope="col" style="background: #0a58ca">Designation</th>
+                    <th scope="col" style="background: #0a58ca">Access Role</th>
+                    <th scope="col" style="background: #0a58ca">DOB</th>
+                    <th scope="col" style="background: #0a58ca">Date of Join </th>
+                    <th scope="col" style="background: #0a58ca">Attached Branch</th>
+                    <th scope="col" style="background: #0a58ca">Address</th>
+                    <th scope="col" style="background: #0a58ca">Contact No</th>
+                    <th scope="col" style="background: #0a58ca">Email</th>
+                    <th scope="col" style="background: #0a58ca">Inform in case of emergency</th>
+                    <th scope="col" style="background: #0a58ca">Emergency Contact</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tblEmployee" style="border: black">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+</main>
+
+<!--staff Content End-->
+
+<!--    Order content-->
+
+<main id="orderPage" style="display: none" class="container-fluid">
+    <section class="container-fluid bg-light border-0 rounded-3 shadow-sm pb-5 ">
+        <div class="row">
+            <div class="col mt-5 mb-5 ">
+                <h3>Order History</h3>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="table-info" scope="col">OrderID</th>
+                        <th class="table-info" scope="col">ItemQty</th>
+                        <th class="table-info" scope="col">BillValue</th>
+                        <th class="table-info" scope="col">Customer</th>
+                        <th class="table-info" scope="col">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblOrder">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+<!--Place Order Content Start-->
+<main id="order" style="display: none" class="container-fluid ">
+    <section class="container-fluid row mt-4 ms-0 me-0">
+        <div class="row bg-white border rounded ms-0 me-0 shadow-sm">
+
+            <div class="col-12 d-flex justify-content-between mt-3">
+                <h1 class="text-muted">Place Order</h1>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="form-label" for="txtOrderID">OrderID:</label>
+                        <input class="form-control" id="txtOrderID" type="text" placeholder="Order Id" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <hr>
+                <form>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="form-group">
+                                <label class="form-label" for="txtitemID">Item No:</label>
+                                <select  class="form-control" id="txtitemID" type="text"></select>
+
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="form-group">
+                                <label class="form-label" for="txtitemName">Item Name:</label>
+                                <input class="form-control" type="text" id="txtitemName" disabled>
+                                <span class="control-error" id="order-item-name"></span>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group">
+                                <label class="form-label" for="txtUnitPrice">Unit Price:</label>
+                                <input class="form-control" id="txtUnitPrice" type="text" disabled>
+                                <span class="control-error" id="order-unit-price"></span>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label class="form-label" for="txtShopQty">QITS:</label>
+                                <input class="form-control" id="txtShopQty" value="0" type="number" disabled>
+                                <span class="control-error" id="order-shop-qty-empty-error"></span>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label class="form-label" for="txtQty">Qty:</label>
+                                <input class="form-control" id="txtQty" value="1" type="number">
+                                <span class="control-error" id="order-qty-empty-error"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label class="form-label" for="orderCustomerID">Customer ID</label>
+                                <select class="form-control" id="orderCustomerID" type="text"></select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="form-label" for="orderCustomerName">Name</label>
+                                <input class="form-control" id="orderCustomerName" type="text" disabled>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label class="form-label" for="orderDate">Date:</label>
+                                <input class="form-control" id="orderDate" type="date">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 mt-2">
+                <hr>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item No</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCart">
+                    </tbody>
+                </table>
+
+
+                <hr>
+            </div>
+
+            <!--  Footer-->
+            <div class="modal-footer col-12 mb-3">
+                <div class="col ms-5">
+                    <div class="row">
+                        <h4 class="text-muted" id="lblTotal">Total: 0.00/=</h4>
+                    </div>
+                    <div class="row">
+                        <h3 class="text-danger " id="lblSubTotal">SubTotal: 0.00/=</h3>
+                    </div>
+                    <h3 class="text-success" id="lblBalance">Balance: 0.00/=</h3>
+                </div>
+                <div class="form-group me-4 m-lg-4">
+                    <input class="form-control" type="text" id="txtCash" placeholder="Cash">
+                    <span class="control-error" ></span>
+                </div>
+                <div class="row">
+                    <button class="btn btn-danger btn-lg me-4" id="btnPurchase" disabled>Purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="controller/IndexController.js"></script>
 <script src="controller/SignInController.js"></script>
 <script src="controller/SignUpController.js"></script>
 <script src="controller/AdminPanelController.js"></script>
@@ -2057,5 +909,8 @@
 <script src="controller/SaleController.js"></script>
 <script src="controller/validation/CustomerValidation.js"></script>
 <script src="controller/validation/SupplierValidation.js"></script>
+
+
+
 </body>
 </html>

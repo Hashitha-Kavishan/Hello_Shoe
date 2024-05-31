@@ -22,7 +22,7 @@ $("#navSupplier").click(function (){
 
 $("#btnSaveSupplier").click(function (){
   saveSupplier();
-    clearSupplierInputField();
+  clearSupplierInputField();
 });
 
 $("#btnSupplirUpdate").click(function (){
@@ -49,7 +49,7 @@ function saveSupplier(){
     let contactNo2=$("#txtSupplierContactNo2").val();
     let email=$("#txtSupplierEmail").val();
 
-    let newSupplier={
+    let newSupplier= {
         supplierCode:supplierCode,
         supplierName:supplierName,
         category:category,

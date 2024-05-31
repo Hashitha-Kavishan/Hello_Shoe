@@ -85,9 +85,9 @@ $("#btnInventorySave").click(function (){
         success: function (resp, textStatus, jqxhr){
             console.log("Success",resp);
             if (jqxhr.status == 201) {
-                alert("Added inventory successfully");
+                alert("Added customer successfully");
             }
-            getAllInventories();
+            getAllCustomers();
         },
         error: function (error){
             console.log("Error",error);
